@@ -972,10 +972,14 @@
       });
     }
 
+    function getRenderedDetailUrl(detail) {
+      return `https://github.com/jochne/linuxdo-awesome-skills/blob/main/${detail}`;
+    }
+
     function createActions(skill) {
       const repo = getGitHubRepoSlug(skill.repository);
       const actions = [
-        { label: "详情", href: skill.detail, className: "primary" },
+        { label: "详情", href: getRenderedDetailUrl(skill.detail), className: "primary" },
         { label: "GitHub", href: skill.repository, className: "secondary" },
         { label: "论坛", href: skill.source, className: "secondary forum-link", icon: skill.forumIcon }
       ];

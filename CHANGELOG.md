@@ -33,4 +33,5 @@
 - README 与静态页新增 DeepWiki 项目解读徽章入口
 - 新增 Read the Docs 配置和 MkDocs 文档导航，用于同步生成文档页面
 - 新增第十九条 `variant-clone-factory`，补充 Variant 共享模板复刻、React 工程导出和视觉验收类工具
+- 静态页技能详情改为跳转 GitHub Markdown 渲染页，避免直接打开 `.md` 源文件
 - 新增 `npm run check`，用于校验 JSON、README、详情页和静态页一致性

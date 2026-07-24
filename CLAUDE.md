@@ -20,6 +20,7 @@
 - 结构化数据不再使用顶层 `status` 字段，改用 `verified_at` 和 `verification_sources` 记录核验信息。
 - 单条 skill 的完整介绍放在 `docs/skills/`，详情页至少要让人快速看懂用途、适合场景、输入输出、核心特色、限制和来源。
 - 静态页面入口为 `index.html`，用于后续发布到 GitHub Pages。
+- 静态页的“详情”按钮使用 GitHub `blob/main` 的 Markdown 渲染页，不直接打开 GitHub Pages 上的 `.md` 源文件；待 Read the Docs 实际发布并确认可访问后，再集中替换 `getRenderedDetailUrl`。
 - Read the Docs 入口配置为根目录 `.readthedocs.yaml`，使用 `mkdocs.yml` 构建 `docs/` 文档站；新增技能时必须同步 MkDocs 导航和 `docs/index.md`。
 - 仓库结构：`data/skills/*.json` 保存结构化数据，`docs/skills/` 保存单条 skill 详情页，`index.html` 保存静态展示页面。
 - 收录原则：只收录 Linux.do 社区用户发布的 skill；来源链接可以保留访问限制说明，例如 Linux.do `Lv1` 登录后可查看。
