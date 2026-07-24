@@ -32,4 +32,5 @@
 - 静态页除页内锚点外的链接默认在新窗口打开，避免读者离开导航页
 - README 与静态页新增 DeepWiki 项目解读徽章入口
 - 新增 Read the Docs 配置和 MkDocs 文档导航，用于同步生成文档页面
+- 新增第十九条 `variant-clone-factory`，补充 Variant 共享模板复刻、React 工程导出和视觉验收类工具
 - 新增 `npm run check`，用于校验 JSON、README、详情页和静态页一致性

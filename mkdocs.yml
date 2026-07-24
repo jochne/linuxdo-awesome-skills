@@ -13,6 +13,7 @@ nav:
   - 收录规则: collection-policy.md
   - 技能详情:
       - image-to-code-skill: skills/image-to-code-skill.md
+      - variant-clone-factory: skills/variant-clone-factory.md
       - guizang-ppt-skill: skills/guizang-ppt-skill.md
       - awesome-ppt-skills: skills/awesome-ppt-skills.md
       - ppt-master: skills/ppt-master.md

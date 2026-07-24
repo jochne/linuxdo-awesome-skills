@@ -1,0 +1,76 @@
+{
+  "id": "variant-clone-factory",
+  "name": "variant-clone-factory",
+  "author": "lulistart",
+  "language": "zh-CN",
+  "repository": "https://github.com/lulistart/variant-clone-factory",
+  "detail_page": "docs/skills/variant-clone-factory.md",
+  "verified_at": "2026-07-24",
+  "verification_sources": [
+    "https://linux.do/t/topic/2642041",
+    "https://github.com/lulistart/variant-clone-factory",
+    "https://github.com/lulistart/variant-clone-factory/blob/main/README.md",
+    "https://github.com/lulistart/variant-clone-factory/blob/main/DEPLOY.md",
+    "https://github.com/lulistart/variant-clone-factory/blob/main/package.json"
+  ],
+  "source": {
+    "type": "linux_do_topic",
+    "topic_id": "2642041",
+    "topic_url": "https://linux.do/t/topic/2642041",
+    "access_state": "publicly accessible during curation",
+    "captured_from": "summary extracted from Linux.do topic, repository README, DEPLOY.md, package.json, and GitHub metadata",
+    "captured_at": "2026-07-24"
+  },
+  "tags": [
+    "网页复刻",
+    "Variant",
+    "React",
+    "Playwright",
+    "代码生成",
+    "视觉验收",
+    "Docker"
+  ],
+  "one_liner": "把 Variant 共享模板链接复刻为 React 工程，导出 ZIP，并可进行像素级视觉验收。",
+  "prerequisites": [
+    "可访问的 Variant 共享模板链接",
+    "Docker + Docker Compose（推荐）或 Node.js/npm",
+    "运行环境可访问 variant.com；必要时配置 HTTP/HTTPS 代理",
+    "本地或 VPS 可运行 Chromium/Playwright"
+  ],
+  "skill_description": {
+    "source": "README.md",
+    "language": "zh-CN",
+    "display_label": "description",
+    "text": "通用 Variant 模板复刻工厂：粘贴共享链接 → 1:1 还原 React 工程 → 导出 ZIP。"
+  },
+  "use_cases": [
+    "把 Variant 共享模板导出为 React 工程",
+    "对有权使用的模板做二次开发或内部原型搭建",
+    "复刻仪表盘、营销页、登录页、卡片站或应用壳",
+    "用像素差异结果检查复刻效果",
+    "通过 Web UI 或 CLI 批量执行复刻任务"
+  ],
+  "summary": "variant-clone-factory 是面向 Variant 共享模板的 React 工程生成工具。它会依次抓取页面、分类结构、生成代码、打包 ZIP，并可输出视觉差异结果做验收。项目提供单容器的 Web UI + API + Playwright 部署方式，也支持从 CLI 直接提交共享链接。",
+  "workflow": [
+    "提交 Variant 共享模板链接",
+    "Capture 抓取目标页面及其可用结构",
+    "Classify 识别页面类型和组成",
+    "Codegen 生成 React 工程代码",
+    "Package ZIP 打包产物到任务目录",
+    "Visual QA 运行可选像素差异检查"
+  ],
+  "limitations": [
+    "只面向 Variant 共享链接，不是任意网站的通用克隆器",
+    "当前输出为 React 工程；作者明确尚未适配 Vue",
+    "目标站点不可访问时需要自行提供网络代理",
+    "复刻质量仍受目标模板、抓取结果和运行环境影响，应以视觉验收结果为准",
+    "仅应处理有权使用或复刻的模板；原仓库未声明许可证，分发前需自行确认授权"
+  ],
+  "notes": [
+    "原项目是可部署的 Web 应用和 CLI，不提供可直接安装到 Codex 的 SKILL.md；本索引按技能型工具收录。",
+    "推荐 Docker 单容器部署，服务同时提供 Express API、静态前端和 Playwright Chromium。",
+    "VPS 小流量部署建议至少 2 核 CPU、4GB 内存和 20GB 磁盘。",
+    "它与 image-to-code-skill 的差异是：本项目从 Variant 共享页面抓取并生成完整 React 工程，image-to-code-skill 从 UI 图片或设计稿进行还原。",
+    "帖子原文未收录到仓库，当前记录仅保留提炼后的结构化信息。"
+  ]
+}

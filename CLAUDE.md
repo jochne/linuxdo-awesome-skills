@@ -83,6 +83,9 @@
 - 第十五条收录是 `agent-cli-creator`，来源于 Linux.do 话题 `2269051` 和 GitHub 项目 `better-world-ai/agent-cli-creator`，内容基于推荐来源、原项目 README、README_EN 与 `SKILL.md` 综合提炼，不保存帖子原文。
 - `agent-cli-creator` 必须作为“元技能与方法论 / Agent 工具链 / 网站 CLI 生成”展示：它通过 `kimi-webbridge` 复用真实 Chrome 登录态，先做站点考古，再为具体网站生成可复用 CLI，并可生成伴随 skill。它和 `agents-progressive-disclosure` 的区别是后者治理指令文件；和 `GenericAgent` 的区别是后者是完整自进化 Agent 框架；和 `wechat-article-reader` 的区别是后者是固定公众号读取工具，本条面向任意具体网站定制 CLI。
 - 第十六至十八条收录是 `OpenCLI`、`CLI-Anything`、`bb-browser`，均来源于 Linux.do 话题 `2269051` 的同一组推荐。三者都应作为“元技能与方法论 / Agent 工具链 / CLI 化生态”展示，不要混入普通内容读取类。
+- 第十九条收录是 `variant-clone-factory`，来源于 Linux.do 话题 `2642041` 和 GitHub 项目 `lulistart/variant-clone-factory`，内容基于 Linux.do 话题、原项目 README、DEPLOY.md、package.json 与 GitHub 元数据综合提炼，不保存帖子原文。
+- `variant-clone-factory` 对外介绍重点应放在“Variant 共享链接、Capture/Classify/Codegen/Package ZIP/Visual QA、React 工程、Docker/Playwright、像素差异验收”。它和 `image-to-code-skill` 的区别是前者抓取 Variant 页面并生成 React 工程，后者以 UI 图片或设计稿为输入进行还原；当前只支持 React，未适配 Vue。
+- 原项目是 Web 应用和 CLI，不提供可直接安装到 Codex 的 `SKILL.md`；展示和备注中需明确这一点。原仓库未声明许可证，读者视图需保留“仅处理有权使用的模板”的边界提示。
 - `OpenCLI` 对外介绍重点应放在“网站/真实浏览器会话/Electron 应用/本地工具统一 CLI 枢纽、Browser Bridge、100+ 站点 adapter、opencli-browser、opencli-adapter-author、verify/trace/站点记忆”。它和 `agent-cli-creator` 的区别是：后者是生成某网站 CLI 的流程，OpenCLI 已提供完整运行时和官方 skills。
 - `CLI-Anything` 对外介绍重点应放在“专业软件 Agent Native、CLI-Hub 市场、matrix 工作流、按 capability/preflight 最小化安装、cli-anything-* 独立包、JSON 输出”。它和 `OpenCLI` 的区别是：OpenCLI 偏网站/浏览器/桌面应用，CLI-Anything 偏专业软件和工作流矩阵。
 - `bb-browser` 对外介绍重点应放在“你的浏览器就是 API、真实 Chrome 登录态、CLI + MCP、snapshot/click/fill/eval/fetch/network、bb-sites adapter”。它和 `OpenCLI` 都是真实浏览器路线，但 bb-browser 更偏轻量执行层，OpenCLI 更偏完整 CLI 枢纽与 adapter 生态。
