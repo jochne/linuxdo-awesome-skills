@@ -91,7 +91,7 @@
 - `gc-minimal-zine-poster-v0-3` 对外介绍重点应放在“高留白、一个清楚视觉事件、纸张/印刷质感、单一高纯度色彩、主题/文章/照片/参考图五种入口、照片保真分级、参考图系统化分析、质量门”。它与后两项的差异是：不要求照片输入，也承担可复用风格系统与 Prompt 编排；项目采用 MIT 许可证。
 - `photo-abstract-editorial` 对外介绍重点应放在“原照片不改动、下方抽象记忆面板只由照片事实推导、平整象牙色底、诗意英文短标题、不是滤镜/重画/风格迁移”。它与 `gathered-scenes-zine-skill` 的差异是：不使用撕纸、纸纹或自由插画，且始终保留完整照片；许可证禁止未经授权的商业使用与商业分发。
 - `gathered-scenes-zine-skill` 对外介绍两条来源帖推荐路线：实景拼贴 `scenes-gathered-zine-v1-3` 保留真实摄影并加入抽象插画场、色彩结构和撕纸边界；影像蒸馏 `scene-distillation-zine-v1-3` 不保留原照片，只从场景语义、情绪张力和视觉隐喻重新创作。仓库另有其他技能目录，本条不因此扩大收录范围。许可证仅限个人非商业使用，企业、客户、SaaS/API、付费服务和商业分发均需作者书面许可。
-- 以上三项均依赖图片生成能力；`photo-abstract-editorial` 和 `gathered-scenes-zine-skill` 还要求上传照片。已按既有“收录技能同步安装本机 Codex”约定安装的实际入口，应在本轮安装验收后更新或核验。
+- 以上三项均依赖图片生成能力；`photo-abstract-editorial` 和 `gathered-scenes-zine-skill` 还要求上传照片。已按既有“收录技能同步安装本机 Codex”约定完成安装：`gc-minimal-zine-poster-v0-3`、`photo-abstract-editorial`、`scenes-gathered-zine-v1-3`、`scene-distillation-zine-v1-3` 的 canonical source 位于 `/Users/xlzhao/.cc-switch/skills/`，Codex 入口均为指向 canonical source 的软链接。
 - `OpenCLI` 对外介绍重点应放在“网站/真实浏览器会话/Electron 应用/本地工具统一 CLI 枢纽、Browser Bridge、100+ 站点 adapter、opencli-browser、opencli-adapter-author、verify/trace/站点记忆”。它和 `agent-cli-creator` 的区别是：后者是生成某网站 CLI 的流程，OpenCLI 已提供完整运行时和官方 skills。
 - `CLI-Anything` 对外介绍重点应放在“专业软件 Agent Native、CLI-Hub 市场、matrix 工作流、按 capability/preflight 最小化安装、cli-anything-* 独立包、JSON 输出”。它和 `OpenCLI` 的区别是：OpenCLI 偏网站/浏览器/桌面应用，CLI-Anything 偏专业软件和工作流矩阵。
 - `bb-browser` 对外介绍重点应放在“你的浏览器就是 API、真实 Chrome 登录态、CLI + MCP、snapshot/click/fill/eval/fetch/network、bb-sites adapter”。它和 `OpenCLI` 都是真实浏览器路线，但 bb-browser 更偏轻量执行层，OpenCLI 更偏完整 CLI 枢纽与 adapter 生态。
