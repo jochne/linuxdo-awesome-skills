@@ -925,6 +925,31 @@
       }
     ];
 
+    const collectionDates = {
+      "agent-cli-creator": "2026-06-16",
+      "agents-progressive-disclosure": "2026-06-12",
+      "awesome-ppt-skills": "2026-06-08",
+      "banana-slides": "2026-06-08",
+      "bb-browser": "2026-06-16",
+      "CLI-Anything": "2026-06-16",
+      "deep-research": "2026-06-12",
+      "gathered-scenes-zine-skill": "2026-08-17",
+      "gc-minimal-zine-poster-v0-3": "2026-08-17",
+      "GenericAgent": "2026-06-09",
+      "GordenPPTSkill": "2026-06-09",
+      "gpt-image2-ppt-skills": "2026-06-08",
+      "graphify": "2026-06-09",
+      "guizang-ppt-skill": "2026-06-08",
+      "image-to-code-skill": "2026-06-08",
+      "karpathy-llm-wiki": "2026-06-09",
+      "OpenCLI": "2026-06-16",
+      "photo-abstract-editorial": "2026-08-17",
+      "ppt-master": "2026-06-08",
+      "thesis-defense-pptx-skill": "2026-06-08",
+      "variant-clone-factory": "2026-07-24",
+      "wechat-article-reader": "2026-06-09"
+    };
+
     const grid = document.querySelector("#skills");
     const searchInput = document.querySelector("#searchInput");
     const emptyState = document.querySelector("#emptyState");
@@ -1055,6 +1080,7 @@
             <div class="card-meta">
               <span>${skill.author}</span>
               <span>${skill.tags[0] || "Skill"}</span>
+              <span>收录 ${collectionDates[skill.name] || "--"}</span>
             </div>
             <h2>${skill.name}</h2>
             <p class="one-liner">${skill.oneLiner}</p>
