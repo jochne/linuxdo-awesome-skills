@@ -205,6 +205,33 @@
       justify-content: flex-start;
     }
 
+    .filters.is-collapsed {
+      max-height: 66px;
+      overflow: hidden;
+    }
+
+    .filter-panel {
+      min-width: 0;
+    }
+
+    .filter-toggle {
+      margin-top: 7px;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font: inherit;
+      font-size: 12px;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .filter-toggle:hover,
+    .filter-toggle:focus-visible {
+      color: var(--green-deep);
+    }
+
     .chip {
       min-height: 30px;
       border: 1px solid var(--line);
@@ -569,53 +596,56 @@
         <span aria-hidden="true">⌕</span>
         <input id="searchInput" type="search" placeholder="搜索技能、用途、标签或来源">
       </label>
-      <div class="filters" aria-label="标签筛选">
-        <button class="chip" type="button" data-filter="all" aria-pressed="true">全部</button>
-        <button class="chip" type="button" data-filter="设计还原" aria-pressed="false">设计还原</button>
-        <button class="chip" type="button" data-filter="前端" aria-pressed="false">前端</button>
-        <button class="chip" type="button" data-filter="Figma" aria-pressed="false">Figma</button>
-        <button class="chip" type="button" data-filter="生图" aria-pressed="false">生图</button>
-        <button class="chip" type="button" data-filter="纸刊海报" aria-pressed="false">纸刊</button>
-        <button class="chip" type="button" data-filter="照片编辑" aria-pressed="false">照片编辑</button>
-        <button class="chip" type="button" data-filter="抽象艺术" aria-pressed="false">抽象艺术</button>
-        <button class="chip" type="button" data-filter="网页 PPT" aria-pressed="false">网页 PPT</button>
-        <button class="chip" type="button" data-filter="封面生成" aria-pressed="false">封面</button>
-        <button class="chip" type="button" data-filter="PPTX" aria-pressed="false">PPTX</button>
-        <button class="chip" type="button" data-filter="可编辑重建" aria-pressed="false">可编辑</button>
-        <button class="chip" type="button" data-filter="原生可编辑" aria-pressed="false">原生可编辑</button>
-        <button class="chip" type="button" data-filter="SVG" aria-pressed="false">SVG</button>
-        <button class="chip" type="button" data-filter="模板克隆" aria-pressed="false">模板克隆</button>
-        <button class="chip" type="button" data-filter="图片型 PPT" aria-pressed="false">图片型 PPT</button>
-        <button class="chip" type="button" data-filter="nano banana pro" aria-pressed="false">nano banana</button>
-        <button class="chip" type="button" data-filter="AI PPT 应用" aria-pressed="false">AI PPT 应用</button>
-        <button class="chip" type="button" data-filter="论文答辩" aria-pressed="false">论文答辩</button>
-        <button class="chip" type="button" data-filter="模板保真" aria-pressed="false">模板保真</button>
-        <button class="chip" type="button" data-filter="中文模板" aria-pressed="false">中文模板</button>
-        <button class="chip" type="button" data-filter="商务汇报" aria-pressed="false">商务汇报</button>
-        <button class="chip" type="button" data-filter="知识库" aria-pressed="false">知识库</button>
-        <button class="chip" type="button" data-filter="LLM 学习" aria-pressed="false">LLM 学习</button>
-        <button class="chip" type="button" data-filter="知识图谱" aria-pressed="false">知识图谱</button>
-        <button class="chip" type="button" data-filter="GraphRAG" aria-pressed="false">GraphRAG</button>
-        <button class="chip" type="button" data-filter="深度调研" aria-pressed="false">深度调研</button>
-        <button class="chip" type="button" data-filter="研究报告" aria-pressed="false">研究报告</button>
-        <button class="chip" type="button" data-filter="多 Agent" aria-pressed="false">多 Agent</button>
-        <button class="chip" type="button" data-filter="微信公众号" aria-pressed="false">微信公众号</button>
-        <button class="chip" type="button" data-filter="文章读取" aria-pressed="false">文章读取</button>
-        <button class="chip" type="button" data-filter="内容提取" aria-pressed="false">内容提取</button>
-        <button class="chip" type="button" data-filter="Agent 指令" aria-pressed="false">Agent 指令</button>
-        <button class="chip" type="button" data-filter="渐进式披露" aria-pressed="false">渐进式披露</button>
-        <button class="chip" type="button" data-filter="上下文治理" aria-pressed="false">上下文治理</button>
-        <button class="chip" type="button" data-filter="网页 CLI" aria-pressed="false">网页 CLI</button>
-        <button class="chip" type="button" data-filter="CLI 生成" aria-pressed="false">CLI 生成</button>
-        <button class="chip" type="button" data-filter="kimi-webbridge" aria-pressed="false">kimi-webbridge</button>
-        <button class="chip" type="button" data-filter="浏览器自动化" aria-pressed="false">浏览器自动化</button>
-        <button class="chip" type="button" data-filter="CLI 枢纽" aria-pressed="false">CLI 枢纽</button>
-        <button class="chip" type="button" data-filter="CLI Hub" aria-pressed="false">CLI Hub</button>
-        <button class="chip" type="button" data-filter="真实浏览器" aria-pressed="false">真实浏览器</button>
-        <button class="chip" type="button" data-filter="MCP" aria-pressed="false">MCP</button>
-        <button class="chip" type="button" data-filter="元技能" aria-pressed="false">元技能</button>
-        <button class="chip" type="button" data-filter="技能树" aria-pressed="false">技能树</button>
-        <button class="chip" type="button" data-filter="Self-evolving Agent" aria-pressed="false">自进化</button>
+      <div class="filter-panel">
+        <div id="filters" class="filters is-collapsed" aria-label="标签筛选">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button class="chip" type="button" data-filter="设计还原" aria-pressed="false">设计还原</button>
+          <button class="chip" type="button" data-filter="前端" aria-pressed="false">前端</button>
+          <button class="chip" type="button" data-filter="Figma" aria-pressed="false">Figma</button>
+          <button class="chip" type="button" data-filter="生图" aria-pressed="false">生图</button>
+          <button class="chip" type="button" data-filter="纸刊海报" aria-pressed="false">纸刊</button>
+          <button class="chip" type="button" data-filter="照片编辑" aria-pressed="false">照片编辑</button>
+          <button class="chip" type="button" data-filter="抽象艺术" aria-pressed="false">抽象艺术</button>
+          <button class="chip" type="button" data-filter="网页 PPT" aria-pressed="false">网页 PPT</button>
+          <button class="chip" type="button" data-filter="封面生成" aria-pressed="false">封面</button>
+          <button class="chip" type="button" data-filter="PPTX" aria-pressed="false">PPTX</button>
+          <button class="chip" type="button" data-filter="可编辑重建" aria-pressed="false">可编辑</button>
+          <button class="chip" type="button" data-filter="原生可编辑" aria-pressed="false">原生可编辑</button>
+          <button class="chip" type="button" data-filter="SVG" aria-pressed="false">SVG</button>
+          <button class="chip" type="button" data-filter="模板克隆" aria-pressed="false">模板克隆</button>
+          <button class="chip" type="button" data-filter="图片型 PPT" aria-pressed="false">图片型 PPT</button>
+          <button class="chip" type="button" data-filter="nano banana pro" aria-pressed="false">nano banana</button>
+          <button class="chip" type="button" data-filter="AI PPT 应用" aria-pressed="false">AI PPT 应用</button>
+          <button class="chip" type="button" data-filter="论文答辩" aria-pressed="false">论文答辩</button>
+          <button class="chip" type="button" data-filter="模板保真" aria-pressed="false">模板保真</button>
+          <button class="chip" type="button" data-filter="中文模板" aria-pressed="false">中文模板</button>
+          <button class="chip" type="button" data-filter="商务汇报" aria-pressed="false">商务汇报</button>
+          <button class="chip" type="button" data-filter="知识库" aria-pressed="false">知识库</button>
+          <button class="chip" type="button" data-filter="LLM 学习" aria-pressed="false">LLM 学习</button>
+          <button class="chip" type="button" data-filter="知识图谱" aria-pressed="false">知识图谱</button>
+          <button class="chip" type="button" data-filter="GraphRAG" aria-pressed="false">GraphRAG</button>
+          <button class="chip" type="button" data-filter="深度调研" aria-pressed="false">深度调研</button>
+          <button class="chip" type="button" data-filter="研究报告" aria-pressed="false">研究报告</button>
+          <button class="chip" type="button" data-filter="多 Agent" aria-pressed="false">多 Agent</button>
+          <button class="chip" type="button" data-filter="微信公众号" aria-pressed="false">微信公众号</button>
+          <button class="chip" type="button" data-filter="文章读取" aria-pressed="false">文章读取</button>
+          <button class="chip" type="button" data-filter="内容提取" aria-pressed="false">内容提取</button>
+          <button class="chip" type="button" data-filter="Agent 指令" aria-pressed="false">Agent 指令</button>
+          <button class="chip" type="button" data-filter="渐进式披露" aria-pressed="false">渐进式披露</button>
+          <button class="chip" type="button" data-filter="上下文治理" aria-pressed="false">上下文治理</button>
+          <button class="chip" type="button" data-filter="网页 CLI" aria-pressed="false">网页 CLI</button>
+          <button class="chip" type="button" data-filter="CLI 生成" aria-pressed="false">CLI 生成</button>
+          <button class="chip" type="button" data-filter="kimi-webbridge" aria-pressed="false">kimi-webbridge</button>
+          <button class="chip" type="button" data-filter="浏览器自动化" aria-pressed="false">浏览器自动化</button>
+          <button class="chip" type="button" data-filter="CLI 枢纽" aria-pressed="false">CLI 枢纽</button>
+          <button class="chip" type="button" data-filter="CLI Hub" aria-pressed="false">CLI Hub</button>
+          <button class="chip" type="button" data-filter="真实浏览器" aria-pressed="false">真实浏览器</button>
+          <button class="chip" type="button" data-filter="MCP" aria-pressed="false">MCP</button>
+          <button class="chip" type="button" data-filter="元技能" aria-pressed="false">元技能</button>
+          <button class="chip" type="button" data-filter="技能树" aria-pressed="false">技能树</button>
+          <button class="chip" type="button" data-filter="Self-evolving Agent" aria-pressed="false">自进化</button>
+        </div>
+        <button id="filterToggle" class="filter-toggle" type="button" aria-expanded="false" aria-controls="filters">展开标签</button>
       </div>
     </section>
 
@@ -967,6 +997,8 @@
     const emptyState = document.querySelector("#emptyState");
     const skillCount = document.querySelector("#skill-count");
     const sourceCount = document.querySelector("#source-count");
+    const filters = document.querySelector("#filters");
+    const filterToggle = document.querySelector("#filterToggle");
     const chips = Array.from(document.querySelectorAll(".chip"));
     let activeFilter = "all";
     const starCache = new Map();
@@ -1129,6 +1161,13 @@
         chips.forEach((item) => item.setAttribute("aria-pressed", String(item === chip)));
         render();
       });
+    });
+
+    filterToggle.addEventListener("click", () => {
+      const expanded = filterToggle.getAttribute("aria-expanded") === "true";
+      filters.classList.toggle("is-collapsed", expanded);
+      filterToggle.setAttribute("aria-expanded", String(!expanded));
+      filterToggle.textContent = expanded ? "展开标签" : "收起标签";
     });
 
     searchInput.addEventListener("input", render);
