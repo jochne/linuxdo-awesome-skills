@@ -542,11 +542,11 @@
       </div>
       <div class="stats" aria-label="索引统计">
         <div class="stat">
-          <strong id="skill-count">19</strong>
+          <strong id="skill-count">22</strong>
           <span>已整理技能</span>
         </div>
         <div class="stat">
-          <strong id="source-count">19</strong>
+          <strong id="source-count">22</strong>
           <span>论坛来源已关联</span>
         </div>
       </div>
@@ -562,6 +562,10 @@
         <button class="chip" type="button" data-filter="设计还原" aria-pressed="false">设计还原</button>
         <button class="chip" type="button" data-filter="前端" aria-pressed="false">前端</button>
         <button class="chip" type="button" data-filter="Figma" aria-pressed="false">Figma</button>
+        <button class="chip" type="button" data-filter="生图" aria-pressed="false">生图</button>
+        <button class="chip" type="button" data-filter="纸刊海报" aria-pressed="false">纸刊</button>
+        <button class="chip" type="button" data-filter="照片编辑" aria-pressed="false">照片编辑</button>
+        <button class="chip" type="button" data-filter="抽象艺术" aria-pressed="false">抽象艺术</button>
         <button class="chip" type="button" data-filter="网页 PPT" aria-pressed="false">网页 PPT</button>
         <button class="chip" type="button" data-filter="封面生成" aria-pressed="false">封面</button>
         <button class="chip" type="button" data-filter="PPTX" aria-pressed="false">PPTX</button>
@@ -637,6 +641,48 @@
         repository: "https://github.com/lulistart/variant-clone-factory",
         stars: "https://github.com/lulistart/variant-clone-factory/stargazers",
         source: "https://linux.do/t/topic/2642041",
+        forumIcon: "https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png"
+      },
+      {
+        name: "gc-minimal-zine-poster-v0-3",
+        author: "LiamGvchi",
+        oneLiner: "把主题、文章、照片或参考图转成留白充足的纸刊风极简海报，并输出可复用的生图 Prompt。",
+        tags: ["生图", "纸刊海报", "极简设计", "ZINE", "视觉系统", "参考图分析", "图片编辑"],
+        prerequisites: ["具备图片生成能力的运行环境", "参考图分析时需可读取图片文件", "可选主题、文字、照片或参考图集"],
+        useCases: ["主题或文章转纸刊海报", "照片主体海报", "参考图视觉系统分析", "只生成最终 Prompt", "同一视觉家族的多种版式"],
+        limitations: ["成图质量取决于图片模型与运行环境", "长文本容易在生成图中失真", "默认追求稀疏纸刊海报，不适合商业广告式满版布局", "参考图只学习视觉语法，不复制原图身份"],
+        detail: "docs/skills/gc-minimal-zine-poster.md",
+        repository: "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+        stars: "https://github.com/LiamGvchi/gc-minimal-zine-poster/stargazers",
+        source: "https://linux.do/t/topic/2735151",
+        forumIcon: "https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png"
+      },
+      {
+        name: "photo-abstract-editorial",
+        author: "ZzzLc0405",
+        oneLiner: "保留原照片不改动，在下方用照片关系生成极简抽象记忆面板，组成竖版编辑作品。",
+        tags: ["生图", "照片编辑", "抽象艺术", "编辑海报", "双联画", "视觉记忆", "极简设计"],
+        prerequisites: ["一张可上传的照片", "具备图片生成能力的运行环境", "仅限个人、教育、研究与非商业使用"],
+        useCases: ["旅行与街拍转竖版编辑作品", "保留照片真实内容并增加抽象叙事", "从照片关系生成记忆面板", "极简档案海报或照片加抽象双联画"],
+        limitations: ["必须以照片为唯一内容来源", "原照片不能重画、扩展、修图或套滤镜", "抽象面板不得添加无关装饰、色彩或符号", "商业使用须取得作者授权"],
+        detail: "docs/skills/photo-abstract-editorial.md",
+        repository: "https://github.com/ZzzLc0405/photo-abstract-editorial",
+        stars: "https://github.com/ZzzLc0405/photo-abstract-editorial/stargazers",
+        source: "https://linux.do/t/topic/2735151",
+        forumIcon: "https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png"
+      },
+      {
+        name: "gathered-scenes-zine-skill",
+        author: "Zeejay0",
+        oneLiner: "一组照片纸刊技能：可保留真实照片做撕纸拼贴，也可只提炼照片语义重新创作编辑插画。",
+        tags: ["生图", "纸刊拼贴", "照片转插画", "影像蒸馏", "撕纸边界", "编辑插画", "ZINE"],
+        prerequisites: ["一张可上传的照片", "具备图片生成能力的运行环境", "仅限个人非商业学习、研究或创作"],
+        useCases: ["照片转撕纸拼贴海报", "保留现场关系并压缩复杂细节", "从照片语义重新创作编辑插画", "旅行照片与街拍的纸刊创作"],
+        limitations: ["两条路径都以用户提供照片为前提", "实景拼贴优先真实关系，影像蒸馏不保证保留原构图", "材质和抽象关系依赖图片模型", "商业使用、企业项目、SaaS/API 和商业分发均需书面授权"],
+        detail: "docs/skills/gathered-scenes-zine-skill.md",
+        repository: "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+        stars: "https://github.com/Zeejay0/gathered-scenes-zine-skill/stargazers",
+        source: "https://linux.do/t/topic/2735151",
         forumIcon: "https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png"
       },
       {

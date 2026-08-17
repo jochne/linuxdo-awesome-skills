@@ -1,0 +1,72 @@
+{
+  "id": "photo-abstract-editorial",
+  "name": "photo-abstract-editorial",
+  "author": "ZzzLc0405",
+  "language": "zh-CN",
+  "repository": "https://github.com/ZzzLc0405/photo-abstract-editorial",
+  "detail_page": "docs/skills/photo-abstract-editorial.md",
+  "verified_at": "2026-08-17",
+  "verification_sources": [
+    "https://linux.do/t/topic/2735151",
+    "https://github.com/ZzzLc0405/photo-abstract-editorial",
+    "https://github.com/ZzzLc0405/photo-abstract-editorial/blob/main/README.md",
+    "https://github.com/ZzzLc0405/photo-abstract-editorial/blob/main/SKILL.md",
+    "https://github.com/ZzzLc0405/photo-abstract-editorial/blob/main/LICENSE.md",
+    "https://api.github.com/repos/ZzzLc0405/photo-abstract-editorial"
+  ],
+  "source": {
+    "type": "linux_do_topic",
+    "topic_id": "2735151",
+    "topic_url": "https://linux.do/t/topic/2735151",
+    "access_state": "publicly accessible during curation",
+    "captured_from": "summary extracted from Linux.do topic, repository README, SKILL.md, LICENSE, and GitHub metadata",
+    "captured_at": "2026-08-17"
+  },
+  "tags": [
+    "生图",
+    "照片编辑",
+    "抽象艺术",
+    "编辑海报",
+    "双联画",
+    "视觉记忆",
+    "极简设计"
+  ],
+  "one_liner": "保留原照片不改动，在下方用照片关系生成极简抽象记忆面板，组成竖版编辑作品。",
+  "prerequisites": [
+    "一张可上传的照片",
+    "具备图片生成能力的运行环境",
+    "仅限个人、教育、研究与非商业使用"
+  ],
+  "skill_description": {
+    "source": "SKILL.md frontmatter description",
+    "language": "zh-CN",
+    "translated_from": "en",
+    "display_label": "description",
+    "text": "创建一张干净的竖版编辑作品：保留上传照片原貌，搭配克制的、从照片中提取的抽象记忆面板和诗意英文标题。适用于希望把照片转化为抽象编辑双联画、照片加抽象构图、视觉记忆面板或极简档案海报，且不重画或风格化原图的需求。"
+  },
+  "use_cases": [
+    "将旅行、街拍或日常摄影制成竖版编辑作品",
+    "保留照片真实内容，同时增加抽象叙事",
+    "根据照片的空间、色彩与节奏制作记忆面板",
+    "制作极简档案海报或照片加抽象双联画"
+  ],
+  "summary": "photo-abstract-editorial 把一张上传照片放在成品的上方或主要区域，并以照片中真实的空间关系、构图节奏和色彩关系生成下方的抽象面板。它禁止滤镜、重画、扩图和风格迁移；成品只加入一个基于可见事实创作的简短英文标题。",
+  "workflow": [
+    "检查照片中的主体、方向、间距、重叠、光线和色彩关系",
+    "保留原照片，只允许为版式做等比缩放或轻微裁切",
+    "将关键关系提炼为稀疏抽象母题，而非描摹或缩略图",
+    "在无纹理象牙色面板上完成垂直构图与原创英文标题",
+    "输出完成的单张作品"
+  ],
+  "limitations": [
+    "需要真实照片作为唯一内容来源，不适用于仅凭主题从零生成",
+    "原照片不能重画、修图、扩展或套用滤镜",
+    "抽象面板必须能追溯到原图事实，不能添加无关装饰、色彩或符号",
+    "项目仅限个人、教育、研究与非商业使用；商业使用需取得作者授权"
+  ],
+  "notes": [
+    "项目许可证保留全部权利，并明确禁止未经授权的商业使用与商业分发。",
+    "与 gathered-scenes-zine-skill 的实景拼贴不同，本项目保留完整原照片并使用平整象牙色抽象面板，不采用撕纸边界或纸张纹理。",
+    "帖子原文未收录到仓库，当前记录仅保留提炼后的结构化信息。"
+  ]
+}

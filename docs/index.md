@@ -17,6 +17,9 @@ Linux.do 社区用户发布的 skills 清单与导航，按用途、前置要求
 
 - [image-to-code-skill](skills/image-to-code-skill.md)
 - [variant-clone-factory](skills/variant-clone-factory.md)
+- [gc-minimal-zine-poster-v0-3](skills/gc-minimal-zine-poster.md)
+- [photo-abstract-editorial](skills/photo-abstract-editorial.md)
+- [gathered-scenes-zine-skill](skills/gathered-scenes-zine-skill.md)
 - [guizang-ppt-skill](skills/guizang-ppt-skill.md)
 - [awesome-ppt-skills](skills/awesome-ppt-skills.md)
 - [ppt-master](skills/ppt-master.md)

@@ -35,3 +35,4 @@
 - 新增第十九条 `variant-clone-factory`，补充 Variant 共享模板复刻、React 工程导出和视觉验收类工具
 - 静态页技能详情改为跳转 GitHub Markdown 渲染页，避免直接打开 `.md` 源文件
 - 新增 `npm run check`，用于校验 JSON、README、详情页和静态页一致性
+- 新增第二十至二十二条 `gc-minimal-zine-poster-v0-3`、`photo-abstract-editorial`、`gathered-scenes-zine-skill`，补充极简纸刊海报、照片保真抽象编辑作品与照片纸刊双路径创作技能

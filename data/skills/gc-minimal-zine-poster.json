@@ -1,0 +1,73 @@
+{
+  "id": "gc-minimal-zine-poster",
+  "name": "gc-minimal-zine-poster-v0-3",
+  "author": "LiamGvchi",
+  "language": "zh-CN",
+  "repository": "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+  "detail_page": "docs/skills/gc-minimal-zine-poster.md",
+  "verified_at": "2026-08-17",
+  "verification_sources": [
+    "https://linux.do/t/topic/2735151",
+    "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+    "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/main/README.zh-CN.md",
+    "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/main/SKILL.md",
+    "https://api.github.com/repos/LiamGvchi/gc-minimal-zine-poster"
+  ],
+  "source": {
+    "type": "linux_do_topic",
+    "topic_id": "2735151",
+    "topic_url": "https://linux.do/t/topic/2735151",
+    "access_state": "publicly accessible during curation",
+    "captured_from": "summary extracted from Linux.do topic, repository README, SKILL.md, LICENSE, and GitHub metadata",
+    "captured_at": "2026-08-17"
+  },
+  "tags": [
+    "生图",
+    "纸刊海报",
+    "极简设计",
+    "ZINE",
+    "视觉系统",
+    "参考图分析",
+    "图片编辑"
+  ],
+  "one_liner": "把主题、文章、照片或参考图转成留白充足的纸刊风极简海报，并输出可复用的生图 Prompt。",
+  "prerequisites": [
+    "具备图片生成能力的运行环境",
+    "参考图分析时需可读取图片文件",
+    "可选主题、文字、照片或参考图集"
+  ],
+  "skill_description": {
+    "source": "SKILL.md frontmatter description",
+    "language": "zh-CN",
+    "translated_from": "en",
+    "display_label": "description",
+    "text": "生成或分析带纸张质感、大片留白、小型编辑拼贴或视觉焦点、实验排版和单一明确色彩强调的诗意极简 ZINE 海报。适用于用户提供主题、句子、文章、情绪、物件、照片、内容简报、参考图或图片文件夹，并希望获得最终海报、生图 Prompt、可复用风格规则或同一视觉家族内的多种版式时。"
+  },
+  "use_cases": [
+    "把一句主题或文章转成纸刊风海报",
+    "以人物、产品或日常照片为主体制作海报",
+    "分析参考图并提炼固定与可变视觉规则",
+    "只获取可直接使用的生图 Prompt",
+    "在同一视觉系统中生成多种版式"
+  ],
+  "summary": "gc-minimal-zine-poster-v0-3 是一套极简 ZINE 海报工作流。它以高留白、一个清楚的视觉事件、实验排版、印刷或扫描纸张质感和单一高饱和色彩为固定语言；既能从主题或内容直接生成，也能处理照片输入、分析参考图并输出可复用的风格规则。",
+  "workflow": [
+    "判断是直接生成、照片输入、参考图分析、仅 Prompt，还是分析后生成",
+    "读取内容或检查实际图片，明确主题、视觉焦点与照片保真边界",
+    "选择一个视觉隐喻和版式变化方案",
+    "编译包含主体、位置、色彩与材质的最终 Prompt",
+    "生成海报，并按质量门检查留白、色彩强调、主体与照片保真",
+    "按请求返回成图、Prompt、配方或参考图风格系统"
+  ],
+  "limitations": [
+    "成图质量和照片保真度取决于实际图片模型与运行环境",
+    "长文本容易被图片模型扭曲，海报内文字应保持简短",
+    "默认追求稀疏纸刊海报，不适合商业广告式满版布局",
+    "参考图只用于学习视觉语法，不应复制原图文字、品牌或构图身份"
+  ],
+  "notes": [
+    "项目采用 MIT 许可证。",
+    "与 photo-abstract-editorial 和 gathered-scenes-zine-skill 相比，它不要求必须以照片为输入，主题、文章和参考图分析都是一等入口。",
+    "帖子原文未收录到仓库，当前记录仅保留提炼后的结构化信息。"
+  ]
+}

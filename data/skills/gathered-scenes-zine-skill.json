@@ -1,0 +1,73 @@
+{
+  "id": "gathered-scenes-zine-skill",
+  "name": "gathered-scenes-zine-skill",
+  "author": "Zeejay0",
+  "language": "zh-CN",
+  "repository": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+  "detail_page": "docs/skills/gathered-scenes-zine-skill.md",
+  "verified_at": "2026-08-17",
+  "verification_sources": [
+    "https://linux.do/t/topic/2735151",
+    "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+    "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/main/README.md",
+    "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/main/skills/scenes-gathered-zine-v1-3/SKILL.md",
+    "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/main/skills/scene-distillation-zine-v1-3/SKILL.md",
+    "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/main/LICENSE",
+    "https://api.github.com/repos/Zeejay0/gathered-scenes-zine-skill"
+  ],
+  "source": {
+    "type": "linux_do_topic",
+    "topic_id": "2735151",
+    "topic_url": "https://linux.do/t/topic/2735151",
+    "access_state": "publicly accessible during curation",
+    "captured_from": "summary extracted from Linux.do topic, repository README, two SKILL.md files, LICENSE, and GitHub metadata",
+    "captured_at": "2026-08-17"
+  },
+  "tags": [
+    "生图",
+    "纸刊拼贴",
+    "照片转插画",
+    "影像蒸馏",
+    "撕纸边界",
+    "编辑插画",
+    "ZINE"
+  ],
+  "one_liner": "一组照片纸刊技能：可保留真实照片做撕纸拼贴，也可只提炼照片语义重新创作编辑插画。",
+  "prerequisites": [
+    "一张可上传的照片",
+    "具备图片生成能力的运行环境",
+    "仅限个人非商业学习、研究或创作"
+  ],
+  "skill_description": {
+    "source": "two SKILL.md frontmatter descriptions",
+    "language": "zh-CN",
+    "translated_from": "en",
+    "display_label": "description",
+    "text": "包含两条照片创作路径：实景拼贴将真实摄影置于源图导出的宽阔抽象插画场中，保留可见的手撕纤维边界和一处高纯度色彩；影像蒸馏则只把照片当作语义与情绪来源，重新创作一张独立的纸上编辑插画，不在成品中保留原照片。"
+  },
+  "use_cases": [
+    "把照片做成带撕纸边界的纸刊拼贴海报",
+    "保留真实现场关系，同时用插画压缩复杂细节",
+    "不保留原照片，只提炼情绪与视觉隐喻重新创作",
+    "为日常场景、旅行照片或街拍制作纸上编辑插画"
+  ],
+  "summary": "gathered-scenes-zine-skill 收录两条互补的照片生图路径。`scenes-gathered-zine-v1-3` 以真实照片为视觉锚点，用源图导出的抽象插画、单一高纯度色彩和撕纸纤维边界延展场景；`scene-distillation-zine-v1-3` 则舍弃照片本身，从场景事实、情绪张力和视觉隐喻重新编排一张独立纸刊作品。",
+  "workflow": [
+    "阅读照片，识别主体、空间关系、方向、色彩与最小语义线索",
+    "选择实景拼贴或影像蒸馏路线",
+    "实景拼贴保留摄影现场，用插画、色彩结构和撕纸边界重新编排",
+    "影像蒸馏从照片提取情绪命题和视觉隐喻，移除照片本身再创作",
+    "输出生成图，并按对应子技能返回简短创作说明"
+  ],
+  "limitations": [
+    "两条路径都以用户提供照片为前提，不是通用文本生图模板",
+    "实景拼贴强调照片真实与关键空间关系；影像蒸馏不保证保留原图构图或细节",
+    "生成质量依赖图片模型对材质、留白、边界和抽象关系的理解",
+    "项目仅限个人非商业使用，企业、客户、SaaS/API、付费服务和商业分发均需作者书面许可"
+  ],
+  "notes": [
+    "该仓库还有其他技能目录；本条仅介绍来源帖子推荐的实景拼贴和影像蒸馏两条路径。",
+    "与 photo-abstract-editorial 相比，本项目允许在两种路径中选择保留真实摄影或完全舍弃照片，并更强调纸张、撕纸、色彩结构与自由插画。",
+    "帖子原文未收录到仓库，当前记录仅保留提炼后的结构化信息。"
+  ]
+}
