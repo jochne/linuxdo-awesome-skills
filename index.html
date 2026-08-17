@@ -277,6 +277,18 @@
       background: rgba(255, 255, 255, 0.72);
     }
 
+    .card-meta .collection-date {
+      min-height: auto;
+      border: 0;
+      padding: 0 1px;
+      background: transparent;
+      color: rgba(102, 115, 108, 0.72);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
     h2 {
       margin: 0;
       font-size: 21px;
@@ -538,16 +550,16 @@
     <section class="hero" aria-labelledby="page-title">
       <div>
         <h1 id="page-title">Linux.do 社区技能导航</h1>
-        <p class="lead">快速了解社区用户发布的 skills：它们能做什么、使用前需要什么、项目在哪里、Star 数如何、论坛来源在哪里，以及是否值得进一步查看。</p>
+        <p class="lead">按用途、前置要求、Star 数和来源，快速筛选 Linux.do 社区用户发布的 skills。</p>
       </div>
       <div class="stats" aria-label="索引统计">
         <div class="stat">
           <strong id="skill-count">22</strong>
-          <span>已整理技能</span>
+          <span>已收录技能</span>
         </div>
         <div class="stat">
           <strong id="source-count">22</strong>
-          <span>论坛来源已关联</span>
+          <span>已关联论坛来源</span>
         </div>
       </div>
     </section>
@@ -610,7 +622,7 @@
     <section id="skills" class="skill-grid" aria-label="技能清单"></section>
     <p id="emptyState" class="empty">没有找到匹配的技能。换个关键词试试。</p>
 
-    <p class="footnote">帖子原文只用于整理阶段提炼用途、特色、流程和局限性；本索引不保存原文全文。</p>
+    <p class="footnote">帖子原文只用于提炼信息，仓库不保存原文。</p>
   </main>
 
   <script>
@@ -1080,7 +1092,7 @@
             <div class="card-meta">
               <span>${skill.author}</span>
               <span>${skill.tags[0] || "Skill"}</span>
-              <span>收录 ${collectionDates[skill.name] || "--"}</span>
+              <span class="collection-date">收录 · ${collectionDates[skill.name] || "--"}</span>
             </div>
             <h2>${skill.name}</h2>
             <p class="one-liner">${skill.oneLiner}</p>
