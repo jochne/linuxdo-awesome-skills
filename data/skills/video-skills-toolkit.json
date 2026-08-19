@@ -1,0 +1,77 @@
+{
+  "id": "video-skills-toolkit",
+  "name": "video-skills-toolkit",
+  "author": "liangdabiao",
+  "language": "zh-CN",
+  "repository": "https://github.com/liangdabiao/video-skills-toolkit",
+  "detail_page": "docs/skills/video-skills-toolkit.md",
+  "verified_at": "2026-08-19",
+  "verification_sources": [
+    "https://github.com/liangdabiao/video-skills-toolkit",
+    "https://raw.githubusercontent.com/liangdabiao/video-skills-toolkit/main/README.md",
+    "https://raw.githubusercontent.com/liangdabiao/video-skills-toolkit/main/LICENSE",
+    "https://linux.do/t/topic/2652859"
+  ],
+  "source": {
+    "type": "linux_do_topic",
+    "topic_id": "2652859",
+    "topic_url": "https://linux.do/t/topic/2652859",
+    "access_state": "publicly accessible",
+    "captured_from": "summary extracted from Linux.do topic and GitHub README/skills structure",
+    "captured_at": "2026-08-19"
+  },
+  "tags": [
+    "视频生成",
+    "Remotion",
+    "长视频",
+    "公众号转视频",
+    "数学动画",
+    "纸片风动画",
+    "字幕驱动"
+  ],
+  "one_liner": "基于 Remotion 的视频生产工具包，把整本书、文章或数学证明自动转成长视频，字幕文件驱动全部动画，配音可用 EdgeTTS 等几乎免费。",
+  "prerequisites": [
+    "Node.js 与 npm（Remotion 工程）",
+    "TTS 服务（MiniMax 或免费 EdgeTTS）",
+    "可选图片 / 素材生成能力（如 apiz）",
+    "用于拆层抠图的 Python 环境"
+  ],
+  "skill_description": {
+    "source": "GitHub README Article Blurb",
+    "language": "zh-CN",
+    "display_label": "description",
+    "text": "这套 Video Skills Toolkit 是做视频时沉淀出来的一组 agent skills：口播视频、公众号文章转视频、数学证明几何动画、纸片风分层动画、手绘故事视频、音频转字幕。它们把脚本、配音、字幕、画面节奏和 Remotion 工程结构串成了一条可复用的视频生产线。"
+  },
+  "use_cases": [
+    "整本书转长视频 / 教程",
+    "微信公众号文章转视频",
+    "数学证明 / 几何动画（3Blue1Brown 风格）",
+    "纸片风分层动画（历史 / 科普 / 商业故事）",
+    "手绘故事视频",
+    "音频 / 视频转字幕与逐字稿"
+  ],
+  "summary": "一组把短视频生产流程沉淀为可复用 agent skills 的 Remotion 工具包：口播、公众号文章转视频、数学证明几何动画、纸片风分层动画、手绘故事、音频转字幕。核心是‘逐字稿 → TTS → 字幕驱动动画 → 音效 / BGM → 低清 proof → 高清出片’的视频生产线，字幕文件是整条视频的唯一基准。",
+  "workflow": [
+    "写逐字稿，决定整条时间线的长度与节奏",
+    "用 TTS 生成音频（MiniMax 或免费 EdgeTTS）",
+    "拿到字幕文件，作为整条视频的唯一基准",
+    "用字幕驱动所有画面与动画",
+    "叠加音效与 BGM",
+    "低画质调试确认",
+    "出高画质成片"
+  ],
+  "limitations": [
+    "视频工程基于 Remotion，需要 Node.js 环境与 npm install / 构建",
+    "配音依赖外部 TTS / API（MiniMax 或 EdgeTTS 等），仓库不含密钥",
+    "纸片等分层动画需要素材生成与绿幕抠图链路",
+    "公众号文章转视频依赖 mp.weixin.qq.com 可访问性",
+    "是一组技能模板集合，不是单一成片项目"
+  ],
+  "notes": [
+    "作者 liangdabiao，仓库采用 MIT License（Copyright 2026 Bozhou）。",
+    "这不是单一 skill，而是一组 Remotion 视频技能模板集合；本索引作为‘视频生产工具包’整体收录。",
+    "原帖与仓库强调‘字幕驱动’心法：视频是以声音为轴的时间线，画面、动画、音效全部对齐到字幕。",
+    "帖子原文只用于提炼，不收录、不本地存档。",
+    "来源 Linux.do 话题 2652859，当前可公开访问。"
+  ]
+}

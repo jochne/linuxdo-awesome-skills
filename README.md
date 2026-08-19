@@ -33,6 +33,7 @@ Linux.do 社区用户发布的 skills 导航。这里按“能做什么、前置
 | [CLI-Anything](docs/skills/cli-anything.md) | 把专业软件能力包装为 Agent 原生 CLI，并通过 CLI-Hub 搜索、安装和组合跨工具工作流 | Python/pip、cli-anything-hub、具体软件依赖 | 软件 CLI、CLI Hub、专业软件 | [![GitHub](https://img.shields.io/badge/GitHub-CLI--Anything-24292f?logo=github)](https://github.com/HKUDS/CLI-Anything) | [![Stars](https://img.shields.io/github/stars/HKUDS/CLI-Anything?style=social)](https://github.com/HKUDS/CLI-Anything/stargazers) | [![Linux.do](https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png)](https://linux.do/t/topic/2269051) |
 | [bb-browser](docs/skills/bb-browser.md) | 把真实 Chrome 登录态变成 CLI 和 MCP，让 Agent 直接读取网页、带登录态请求和操作页面 | Node.js 18+、bb-browser、真实 Chrome、网站登录态 | 浏览器自动化、真实浏览器、MCP | [![GitHub](https://img.shields.io/badge/GitHub-bb--browser-24292f?logo=github)](https://github.com/epiral/bb-browser) | [![Stars](https://img.shields.io/github/stars/epiral/bb-browser?style=social)](https://github.com/epiral/bb-browser/stargazers) | [![Linux.do](https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png)](https://linux.do/t/topic/2269051) |
 | [GenericAgent](docs/skills/generic-agent.md) | 自进化 Agent 框架，不提供单个可安装 skill，而是让 Agent 自动沉淀 SOP、生成技能树并迭代能力 | Python 3.11/3.12、LLM API Key、本地运行权限 | 元技能、Self-evolving Agent、技能树 | [![GitHub](https://img.shields.io/badge/GitHub-GenericAgent-24292f?logo=github)](https://github.com/lsdefine/GenericAgent) | [![Stars](https://img.shields.io/github/stars/lsdefine/GenericAgent?style=social)](https://github.com/lsdefine/GenericAgent/stargazers) | [![Linux.do](https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png)](https://linux.do/t/topic/1962519) |
+| [video-skills-toolkit](docs/skills/video-skills-toolkit.md) | 基于 Remotion 的视频生产工具包，把整本书、文章或数学证明自动转成长视频，字幕驱动全部动画，配音可用 EdgeTTS 等几乎免费 | Node.js + Remotion、TTS（MiniMax 或免费 EdgeTTS） | 视频生成、Remotion、长视频、公众号转视频、数学动画 | [![GitHub](https://img.shields.io/badge/GitHub-video--skills--toolkit-24292f?logo=github)](https://github.com/liangdabiao/video-skills-toolkit) | [![Stars](https://img.shields.io/github/stars/liangdabiao/video-skills-toolkit?style=social)](https://github.com/liangdabiao/video-skills-toolkit/stargazers) | [![Linux.do](https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png)](https://linux.do/t/topic/2652859) |
 
 ## 技能简介
 
@@ -75,6 +76,9 @@ Linux.do 社区用户发布的 skills 导航。这里按“能做什么、前置
 
 - [banana-slides](docs/skills/banana-slides.md)：基于 `nano banana pro` 的一站式 Vibe PPT 应用，提供 Web 应用、素材工具箱、框选编辑、CLI、批量生成和多格式导出。
   > description：通过 Banana Slides API 创建、管理和导出 AI 生成演示稿的 CLI 工具。当用户要求：1. 从想法、大纲或描述生成 PPT/演示稿/幻灯片；2. 将项目导出为 PPTX、PDF 或图片；3. 批量生成多份演示稿；4. 以编程方式管理项目、页面、素材或模板；5. 翻新/重设计已有 PPT 或 PDF；6. 用自然语言编辑幻灯片图片时使用。
+
+- [video-skills-toolkit](docs/skills/video-skills-toolkit.md)：基于 Remotion 的视频生产工具包，把整本书、文章或数学证明自动转成长视频；核心是“字幕驱动”心法——字幕文件是整条视频唯一基准，画面、动画、音效全部对齐到它。含口播、公众号文章转视频、数学证明几何动画、纸片风分层动画、手绘故事、音频转字幕六类模板。
+  > description：这套 Video Skills Toolkit 是做视频时沉淀出来的一组 agent skills：口播视频、公众号文章转视频、数学证明几何动画、纸片风分层动画、手绘故事视频、音频转字幕。它们把脚本、配音、字幕、画面节奏和 Remotion 工程结构串成了一条可复用的视频生产线。
 
 ### 知识管理
 

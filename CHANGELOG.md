@@ -36,3 +36,4 @@
 - 静态页技能详情改为跳转 GitHub Markdown 渲染页，避免直接打开 `.md` 源文件
 - 新增 `npm run check`，用于校验 JSON、README、详情页和静态页一致性
 - 新增第二十至二十二条 `gc-minimal-zine-poster-v0-3`、`photo-abstract-editorial`、`gathered-scenes-zine-skill`，补充极简纸刊海报、照片保真抽象编辑作品与照片纸刊双路径创作技能
+- 新增第二十三条 `video-skills-toolkit`，补充 Remotion 视频生产工具包、整本书转长视频、公众号文章转视频、数学证明几何动画与字幕驱动生产线类技能
