@@ -581,11 +581,11 @@
       </div>
       <div class="stats" aria-label="索引统计">
         <div class="stat">
-          <strong id="skill-count">22</strong>
+          <strong id="skill-count">25</strong>
           <span>已收录技能</span>
         </div>
         <div class="stat">
-          <strong id="source-count">22</strong>
+          <strong id="source-count">25</strong>
           <span>已关联论坛来源</span>
         </div>
       </div>
@@ -644,6 +644,13 @@
           <button class="chip" type="button" data-filter="元技能" aria-pressed="false">元技能</button>
           <button class="chip" type="button" data-filter="技能树" aria-pressed="false">技能树</button>
           <button class="chip" type="button" data-filter="Self-evolving Agent" aria-pressed="false">自进化</button>
+          <button class="chip" type="button" data-filter="视频生成" aria-pressed="false">视频生成</button>
+          <button class="chip" type="button" data-filter="Remotion" aria-pressed="false">Remotion</button>
+          <button class="chip" type="button" data-filter="AI 短剧" aria-pressed="false">AI 短剧</button>
+          <button class="chip" type="button" data-filter="Seedance" aria-pressed="false">Seedance</button>
+          <button class="chip" type="button" data-filter="真人实拍" aria-pressed="false">真人实拍</button>
+          <button class="chip" type="button" data-filter="上美影" aria-pressed="false">上美影</button>
+          <button class="chip" type="button" data-filter="视频分镜" aria-pressed="false">视频分镜</button>
         </div>
         <button id="filterToggle" class="filter-toggle" type="button" aria-expanded="false" aria-controls="filters">展开标签</button>
       </div>
@@ -978,6 +985,34 @@
         stars: "https://github.com/liangdabiao/video-skills-toolkit/stargazers",
         source: "https://linux.do/t/topic/2652859",
         forumIcon: "https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png"
+      },
+      {
+        name: "seedance-storyboard-generator-realman",
+        author: "liangdabiao",
+        oneLiner: "把故事、文章或大纲转成真人实拍质感的 AI 短剧分镜与制作文档，覆盖“文-资-视-剪”全流程与真人感六根支柱。",
+        tags: ["AI 短剧", "Seedance", "视频分镜", "真人实拍", "口型同步", "剧本创作", "文资视剪"],
+        prerequisites: ["故事、文章或剧本大纲", "出图/出片需安装登录即梦 CLI 并消耗积分", "默认 Seedream 5.5 + Seedance 2.5 Flash", "仅写剧本和提示词无需即梦 CLI"],
+        useCases: ["故事或大纲改写为 15 秒分集真人短剧剧本", "生成角色/场景/道具参考图锁形象光位", "输出带精确时间轴与口型同步的 Seedance 分镜", "配合即梦 CLI 报价并完成文-资-视-剪生产", "参考内置费曼 5 集端到端案例"],
+        limitations: ["实际生图和视频需要安装登录即梦 CLI 且消耗积分（仅写剧本不需要）", "单集默认 15 秒 480p，台词需控制在约 30-50 字以匹配时长与口型", "禁止使用真实演员人脸，且原仓库未声明开源许可证"],
+        detail: "docs/skills/seedance-storyboard-generator-realman.md",
+        repository: "https://github.com/liangdabiao/seedance-storyboard-generator-realman",
+        stars: "https://github.com/liangdabiao/seedance-storyboard-generator-realman/stargazers",
+        source: "https://linux.do/t/topic/3186529",
+        forumIcon: "https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png"
+      },
+      {
+        name: "smy-seedance-storyboard",
+        author: "liangdabiao",
+        oneLiner: "把故事、小说或神话转成上美影复古手绘动画风格的 Seedance 2.0 短剧剧本、色盘、资产提示词与分镜文档。",
+        tags: ["AI 短剧", "Seedance", "上美影", "国风动画", "视频分镜", "剧本创作", "文资视剪"],
+        prerequisites: ["故事大纲、小说或神话典故", "AI 绘图平台（即梦/Seedream/豆包/MJ）", "Seedance 2.0 视频生成平台", "外部剪辑软件（拼集/旁白/配乐）"],
+        useCases: ["把神话典故或小说改编为上美影复古手绘短剧", "输出剧本、统一色盘、资产提示词、分镜与尾帧说明", "生成纯 2D 平涂角色、场景、异兽与道具参考图", "切换石蓝淡墨绘本/水墨淡彩/剪纸风/敦煌重彩子风格", "作为轻量化二开范例按个人画风改造"],
+        limitations: ["只产出可复制的剧本与提示词文档，不内置自动生图/剪辑程序", "受 Seedance 2.0 参考图上限（9 张）及敏感词约束，需保留纯 2D 平涂硬约束", "分镜只生成音效，不生成配乐和字幕，且原仓库未声明开源许可证"],
+        detail: "docs/skills/smy-seedance-storyboard.md",
+        repository: "https://github.com/liangdabiao/smy-seedance-storyboard",
+        stars: "https://github.com/liangdabiao/smy-seedance-storyboard/stargazers",
+        source: "https://linux.do/t/topic/2807171",
+        forumIcon: "https://cdn3.ldstatic.com/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png"
       }
     ];
 
@@ -1001,8 +1036,11 @@
       "OpenCLI": "2026-06-16",
       "photo-abstract-editorial": "2026-08-17",
       "ppt-master": "2026-06-08",
+      "seedance-storyboard-generator-realman": "2026-11-26",
+      "smy-seedance-storyboard": "2026-11-26",
       "thesis-defense-pptx-skill": "2026-06-08",
       "variant-clone-factory": "2026-07-24",
+      "video-skills-toolkit": "2026-08-19",
       "wechat-article-reader": "2026-06-09"
     };
 

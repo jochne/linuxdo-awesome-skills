@@ -38,3 +38,5 @@ Linux.do 社区用户发布的 skills 清单与导航，按用途、前置要求
 - [bb-browser](skills/bb-browser.md)
 - [GenericAgent](skills/generic-agent.md)
 - [video-skills-toolkit](skills/video-skills-toolkit.md)
+- [seedance-storyboard-generator-realman](skills/seedance-storyboard-generator-realman.md)
+- [smy-seedance-storyboard](skills/smy-seedance-storyboard.md)

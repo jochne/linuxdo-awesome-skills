@@ -37,3 +37,4 @@
 - 新增 `npm run check`，用于校验 JSON、README、详情页和静态页一致性
 - 新增第二十至二十二条 `gc-minimal-zine-poster-v0-3`、`photo-abstract-editorial`、`gathered-scenes-zine-skill`，补充极简纸刊海报、照片保真抽象编辑作品与照片纸刊双路径创作技能
 - 新增第二十三条 `video-skills-toolkit`，补充 Remotion 视频生产工具包、整本书转长视频、公众号文章转视频、数学证明几何动画与字幕驱动生产线类技能
+- 新增第二十四条 `seedance-storyboard-generator-realman` 与第二十五条 `smy-seedance-storyboard`，补充真人实拍质感与上美影复古手绘动画两类 Seedance 短剧分镜技能，并在静态页补齐 `video-skills-toolkit` 的收录日期及视频/短剧筛选标签

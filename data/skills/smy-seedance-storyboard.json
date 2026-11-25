@@ -1,0 +1,75 @@
+{
+  "id": "smy-seedance-storyboard",
+  "name": "smy-seedance-storyboard",
+  "author": "liangdabiao",
+  "language": "zh-CN",
+  "repository": "https://github.com/liangdabiao/smy-seedance-storyboard",
+  "detail_page": "docs/skills/smy-seedance-storyboard.md",
+  "verified_at": "2026-11-26",
+  "verification_sources": [
+    "https://github.com/liangdabiao/smy-seedance-storyboard",
+    "https://raw.githubusercontent.com/liangdabiao/smy-seedance-storyboard/main/README.md",
+    "https://raw.githubusercontent.com/liangdabiao/smy-seedance-storyboard/main/SKILL.md",
+    "https://linux.do/t/topic/2807171"
+  ],
+  "source": {
+    "type": "linux_do_topic",
+    "topic_id": "2807171",
+    "topic_url": "https://linux.do/t/topic/2807171",
+    "access_state": "publicly accessible",
+    "captured_from": "summary extracted from Linux.do topic and GitHub README/SKILL.md",
+    "captured_at": "2026-11-26"
+  },
+  "tags": [
+    "AI 短剧",
+    "Seedance",
+    "上美影",
+    "国风动画",
+    "视频分镜",
+    "剧本创作",
+    "文资视剪"
+  ],
+  "one_liner": "把故事、小说或神话转成上美影复古手绘动画风格的 Seedance 2.0 短剧剧本、色盘、资产提示词与分镜文档。",
+  "prerequisites": [
+    "故事大纲、小说、神话典故或民间传说素材",
+    "AI 绘图平台（即梦/Seedream/豆包，或 Midjourney/GPT-Image-2）",
+    "Seedance 2.0 视频生成平台（支持参考图与视频延长）",
+    "外部剪辑软件（拼集、配旁白、配乐与字幕）"
+  ],
+  "skill_description": {
+    "source": "SKILL.md frontmatter",
+    "language": "zh-CN",
+    "display_label": "description",
+    "text": "专业的上美影风格AI短剧制作系统（基于Seedance 2.0平台）。当用户要求：(1) 将故事/小说/神话/民间传说转换为上美影风格视频脚本，(2) 生成上美影风格（上海美术电影制片厂复古手绘动画）的Seedance 2.0分镜提示词，(3) 规划多集国风动画短剧系列，(4) 为Midjourney、GPT-Image-2、Seedream、Nano Banana Pro等图像模型创建上美影风格的角色/场景/异兽/道具生成提示词时使用。输入可以是完整的小说、神话典故、历史故事或简短的故事大纲。输出包括标准脚本格式的完整剧本（△镜头描述+对白+OS/VO+闪回+字幕，含说书人旁白体制）、剧集分解、剧组色盘声明、资产生成提示词和Seedance 2.0格式的分镜脚本。支持\"文-资-视-剪\"工作流，所有视觉输出统一为上美影风格（水墨线条、矿物颜料纯平涂色块、概括造型、胶片颗粒感，纯2D无阴影无渐变）。"
+  },
+  "use_cases": [
+    "把神话典故、水浒/志怪故事或小说改编为上美影复古手绘短剧",
+    "一次性产出剧本、剧组统一色盘、资产出图提示词、分镜脚本与尾帧衔接说明",
+    "为即梦/Seedream/豆包或 Midjourney 生成纯 2D 平涂角色、场景、异兽与道具参考图",
+    "按需切换石蓝淡墨绘本、水墨淡彩、剪纸风或敦煌重彩等国风子风格",
+    "作为开源 Seedance 短剧技能的轻量化二开范例按个人画风改造"
+  ],
+  "summary": "基于 Seedance2-Storyboard-Generator 二次开发的上美影（上海美术电影制片厂）复古手绘动画短剧分镜技能。面向 Seedance 2.0 平台，主打“极致简单、不做重自动化”，通过固定风格咒语、纯 2D 平涂无阴影无渐变硬约束、全剧统一矿物颜料色盘和说书人旁白体制，输出全部中文、直接复制可用的剧本、资产清单、每集 13-15 秒时间轴分镜和尾帧衔接说明。",
+  "workflow": [
+    "输入一句故事想法、小说、神话典故或大纲，并确认集数、画幅与基调（可直接用默认）",
+    "生成完整分集剧本（△ 镜头描述 + 说书人旁白体制 + 台词）与本剧专用矿物颜料色盘声明",
+    "按统一风格块与平涂硬约束生成角色、场景、异兽与道具资产提示词（中文直用，可选英文版供 Midjourney）",
+    "在绘图平台出图后，将每集 Seedance 2.0 时间轴分镜提示词配 @图片X 参考图生成视频（第 2 集起用 @视频1 延长 15s）",
+    "在外部剪辑软件中拼集并补配说书人旁白、锣鼓配乐与字幕，残次镜头可用分镜出图提示词修补"
+  ],
+  "limitations": [
+    "只产出可复制的剧本与提示词文档，不内置自动调用生图/出片接口的程序，需手动到平台生成并外部剪辑",
+    "受 Seedance 2.0 平台限制：单次生成最多 9 张参考图、最多 3 段参考视频（共 15 秒），超 300 词复杂提示词或敏感词可能导致生成不稳定",
+    "Seedance 提示词仅生成明确环境/动作音效，不生成音乐和字幕，成片需在剪辑阶段补配",
+    "原仓库未声明开源许可证，商业使用或二次分发前请先向作者确认授权",
+    "为防止画风漂移为油画或 3D 渲染，必须保留固定风格块与纯 2D 平涂硬约束，且动作描述宜慢不宜剧烈"
+  ],
+  "notes": [
+    "作者 liangdabiao，基于其开源项目 liangdabiao/Seedance2-Storyboard-Generator 二次开发，演示如何按个人风格低门槛定制短剧 skill；原仓库未声明 SPDX 许可证。",
+    "以 references/上美影风格指南.md 为单一事实来源，生图端（纯 2D 平涂无阴影无渐变）与视频端（手绘平涂保留颜料笔触、禁 3D/写实/体积光）配方分开维护。",
+    "支持手绘平涂主线以及石蓝淡墨绘本、水墨淡彩、剪纸风、敦煌重彩四类子风格；动画风格天然规避真人脸部审核限制。",
+    "仓库内置《鲁智深醉闹五台山》《罗刹市》两个端到端示例项目。",
+    "帖子原文只用于提炼，不收录、不本地存档。",
+    "来源 Linux.do 话题 2807171，当前可公开访问。"
+  ]
+}

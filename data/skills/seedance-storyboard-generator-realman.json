@@ -1,0 +1,75 @@
+{
+  "id": "seedance-storyboard-generator-realman",
+  "name": "seedance-storyboard-generator-realman",
+  "author": "liangdabiao",
+  "language": "zh-CN",
+  "repository": "https://github.com/liangdabiao/seedance-storyboard-generator-realman",
+  "detail_page": "docs/skills/seedance-storyboard-generator-realman.md",
+  "verified_at": "2026-11-26",
+  "verification_sources": [
+    "https://github.com/liangdabiao/seedance-storyboard-generator-realman",
+    "https://raw.githubusercontent.com/liangdabiao/seedance-storyboard-generator-realman/main/README.md",
+    "https://raw.githubusercontent.com/liangdabiao/seedance-storyboard-generator-realman/main/SKILL.md",
+    "https://linux.do/t/topic/3186529"
+  ],
+  "source": {
+    "type": "linux_do_topic",
+    "topic_id": "3186529",
+    "topic_url": "https://linux.do/t/topic/3186529",
+    "access_state": "publicly accessible",
+    "captured_from": "summary extracted from Linux.do topic and GitHub README/SKILL.md",
+    "captured_at": "2026-11-26"
+  },
+  "tags": [
+    "AI 短剧",
+    "Seedance",
+    "视频分镜",
+    "真人实拍",
+    "口型同步",
+    "剧本创作",
+    "文资视剪"
+  ],
+  "one_liner": "把故事、文章或大纲转成真人实拍质感的 AI 短剧分镜与制作文档，覆盖“文-资-视-剪”全流程与真人感六根支柱。",
+  "prerequisites": [
+    "故事、文章或剧本大纲",
+    "实际出图/出片需安装登录即梦 CLI（dreamina-canvas）并消耗积分",
+    "默认模型：Seedream 5.5 + Seedance 2.5 Flash（可选 apiz 备选通道）",
+    "仅写剧本和提示词无需安装即梦 CLI"
+  ],
+  "skill_description": {
+    "source": "SKILL.md frontmatter",
+    "language": "zh-CN",
+    "display_label": "description",
+    "text": "把故事/文章/大纲做成真人实拍质感、电影感的 AI 视频分镜。用于文-资-视-剪全流程：短剧剧本、角色/场景/道具资产提示词、Seedance 分镜提示词（精确时间轴+逐字对白+口型）。当要求真人感/写实/实拍质感/口型同步，或要点名二维动画/水墨/广告等风格时使用。真人写实的做法以 references/真人感电影写实指南.md 为准。"
+  },
+  "use_cases": [
+    "故事、文章或大纲改写为 15 秒分集真人短剧剧本",
+    "生成角色/场景/道具参考图提示词以锁定人物与光位",
+    "输出带精确时间轴、逐字对白与同期声口型同步的 Seedance 分镜提示词",
+    "配合即梦 CLI 报价并执行文-资-视-剪短剧生产",
+    "参考内置费曼《不一样的工具箱》5 集案例快速上手或按需切换题材风格"
+  ],
+  "summary": "面向真人实拍与 35mm 胶片电影质感的 Seedance 短剧分镜技能包，遵循“文 → 资 → 视 → 剪”四步流程，以“真人感六根支柱”（摄影介质、皮肤与材质、空间锚定、物理因果、呼吸微表情、同期声口型）和简约小说化提示词替代冗长施工表式指令，强调先出资产参考图锁形象再图生视频，并支持生成前即梦积分免费报价与 apiz 备选通道。",
+  "workflow": [
+    "文：把故事或文章改写成每集 15 秒的分集剧本（△ 镜头正文 + 角色情绪台词 + 黄金三秒）",
+    "资：为角色（C01）、场景（S01）与道具（P01）编写写实资产提示词并生成参考图，锁定形象与光位",
+    "预算确认：实际出图/出片前先通过即梦 CLI 免费报价接口确认积分消耗",
+    "视：按真人感六根支柱撰写电影小说笔法的纯文本分镜提示词（E0X_prompt.txt）并挂参考图生成视频",
+    "写后自检与剪辑：检查简洁性、对白口型防全哑与纯净度，并通过抽帧接力、视频延长与剪辑拼接成片"
+  ],
+  "limitations": [
+    "实际生成图片和视频需要安装并登录即梦 CLI 且消耗积分（仅写剧本与提示词不需要）",
+    "单集默认 15 秒、480p（约 105 积分；720p 约 285 积分），台词需控制在约 30-50 字以匹配时长与口型",
+    "禁止直接使用真实演员人脸，写实人物如遇平台拒审需改用虚构角色设定或权衡兜底画质代价",
+    "原仓库未声明开源许可证，商业使用或二次分发前请先向作者确认授权",
+    "AI 视频生成存在随机性，多集连贯成片仍需抽帧接力、延长与人工筛选剪辑"
+  ],
+  "notes": [
+    "作者 liangdabiao，原仓库未声明 SPDX 许可证。",
+    "以 references/真人感电影写实指南.md 为唯一事实来源，并内置费曼《不一样的工具箱》5 集端到端案例及 B 站演示链接。",
+    "提供 references/apiz-flare-h3备选通道.md（apiz.ai 的 gpt-image-2.5-flare + MiniMax-H3）作为即梦积分不足时的备选方案，并提及配套 dsh-realman-studio 工作台。",
+    "与同作者 smy-seedance-storyboard 区别：本条专攻真人实拍电影质感、同期声口型同步与简约小说化提示词；后者专攻上美影复古手绘纯 2D 平涂动画。",
+    "帖子原文只用于提炼，不收录、不本地存档。",
+    "来源 Linux.do 话题 3186529，当前可公开访问。"
+  ]
+}
